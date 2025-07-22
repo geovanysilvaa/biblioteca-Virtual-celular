@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBLIOTECAVIRTUAL</title>
+    <style>
+        body{
+        background-color:wheat;
+        }
+    </style>
+    <link rel="stylesheet" href="teste.css"/>
+</head>
+<body>
+<div class="layout">
+<h1>📚Biblioteca Virtual📚</h1>
+<button class="botaoadicionarlivros" onclick="window.location.href='adicionarlivros.html'">➕adicionar livros</button>
+
+<button class="botaolistalivros" onclick="window.location.href='lista.html'">📖Lista Livros</button>
+<button class="botaoescluirlivros" onclick="window.location.href='excluir.html'">🚮Escluir Livros</button>
+<button class="botaobuscarlivros">🔍Buscar Livros</button>
+<button class="botaolistafavoritos" onclick="window.location.href='adFavoritos.html'">⭐Ad Favoritos</button>
+<button class="botaoexcluirfavoritos" onclick="window.location.href='excluirfavoritos.html'">Excluir Favoritos</button>
+<button class="pagina" onclick="window.location.href='index.html'">Pagina Inicial</button>
+
+<div class="quadro">
+<h1 class="titulo1">Livros Cadastrados/Excluir Favoritos</h1>
+
+<label><strong>Titulolivros:</strong></label>
+<br>
+<input class="input1" id="titulolivror" type="text" 
+placeholder="Digite o titulo">
+
+<button class="botaoabrirlivro" id="apagarFavorito">Apagar Favoritos</button>
+
+<button class="botaomostrarlista" id="mostrarLista"
+>Mostrar Lista</button>
+
+<div id="mensagem"></div>
+</div>
+</div>    
+<div class="lista0" id="listaLivros"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBLIOTECAVIRTUAL</title>
+    <style>
+        body{
+        background-color:wheat;
+        }
+    </style>
+    <link rel="stylesheet" href="teste.css"/>
+</head>
+<body>
+<div class="layout">
+<h1>📚Biblioteca Virtual📚</h1>
+<button class="botaoadicionarlivros" onclick="window.location.href='adicionarlivros.html'">➕adicionar livros</button>
+<button class="botaolistalivros" onclick="window.location.href='lista.html'">📖Lista Livros</button>
+<button class="botaoescluirlivros" onclick="window.location.href='excluir.html'">🚮Escluir Livros</button>
+<button class="botaobuscarlivros">🔍Buscar Livros</button>
+<button class="botaolistafavoritos" onclick="window.location.href='adFavoritos.html'">⭐Ad Favoritos</button>
+<button class="botaoexcluirfavoritos" onclick="window.location.href='excluirfavoritos.html'">Excluir Favoritos</button>
+<button class="pagina" onclick="window.location.href='index.html'">Pagina Inicial</button>
+
+<div class="quadro">
+<h1 class="titulo1">Lista de Livros Disponivel</h1>
+
+<P><strong>Categorias:</strong></P>
+<button class="terror" onclick="mostrarLista1()">TERROR</button>
+<button class="acao" onclick="mostrarLista2()">ACAO</button>
+<button class="ficcaocientifica" onclick="mostrarLista3()">FICCAOCIENTIFICA</button>
+<button class="romance" onclick="mostrarLista4()">ROMANCE</button>
+<button class="comedia" onclick="mostrarLista5()">COMEDIA</button>
+<button class="drama" onclick="mostrarLista6()">DRAMA</button>
+</div>
+</div>
+
+<script>
+function mostrarLista1() {
+const lista = document.getElementById("lista1");
+lista.style.display = (lista.style.display === "none" || lista.style.display === "") ? "block" : "none";
+}
+function mostrarLista2() {
+const lista = document.getElementById("lista2");
+lista.style.display = (lista.style.display === "none" || lista.style.display === "") ? "block" : "none";
+}
+function mostrarLista3() {
+const lista = document.getElementById("lista3");
+lista.style.display = (lista.style.display === "none" || lista.style.display === "") ? "block" : "none";
+}
+function mostrarLista4() {
+const lista = document.getElementById("lista4");
+lista.style.display = (lista.style.display === "none" || lista.style.display === "") ? "block" : "none";
+}
+function mostrarLista5() {
+const lista = document.getElementById("lista5");
+lista.style.display = (lista.style.display === "none" || lista.style.display === "") ? "block" : "none";
+}
+function mostrarLista6() {
+const lista = document.getElementById("lista6");
+lista.style.display = (lista.style.display === "none" || lista.style.display === "") ? "block" : "none";
+}
+</script>    
+
+<div class="quadrolista1">
+<ul id="lista1" style="display: none;" >
+<li><strong>TERROR</strong></li>
+<li>bird box</li>
+</ul>
+</div>
+
+<div class="quadrolista2">
+<ul id="lista2" style="display: none;" >
+<li><strong>ACAO</strong></li>  
+<li>as cronicas de narnia</li>
+</ul>
+</div>
+
+<div class="quadrolista3">
+<ul id="lista3" style="display: none;" >
+<li><strong>FICCAO</strong></li>  
+<li>o jogo do exterminador</li>
+</ul>
+</div>
+
+<div class="quadrolista4">
+<ul id="lista4" style="display: none;" >
+<li><strong>ROMANCE</strong></li>  
+<li>como eu era antes de voce</li>
+</ul>
+</div>
+
+<div class="quadrolista5">
+<ul id="lista5" style="display: none;" >
+<li><strong>COMEDIA</strong></li>  
+<li>as aventuras de tom sawyer</li>
+</ul>
+</div>
+
+<div class="quadrolista6">
+<ul id="lista6" style="display: none;" >
+<li><strong>DRAMA</strong></li>  
+<li>a menina que roubava livros</li>
+</ul>
+</div>
+
+<div class="quadroinput" >
+
+<label><strong>Adicionar livros:</strong></label>
+
+<input class="input1" id="respostatitulo" type="text" placeholder="🔍Digite o titulo do livro">
+
+<div id="mensagem"></div>
+<button class="botaoadicionalivros2" onclick="adicionarlivros()">Adicionar Livro</button>
+<p>Dica:adicione livros digitando o titulo e clicando no botao adicionar livros.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
